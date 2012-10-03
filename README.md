@@ -20,7 +20,13 @@ How to install
  
 Example
 ========== 
-include <ShiftBrite.h>
+```c++
+#include <ShiftBrite.h>
+
+int datapin = 5;
+int latchpin = 6;
+int enablepin = 10;
+int clockpin = 11;
 
 ShiftBrite shift(datapin,latchpin,enablepin,clockpin); //construct
 
@@ -34,3 +40,4 @@ void loop()
   //Test Red
   shift.sendColor(255,0,0);
 }
+```
